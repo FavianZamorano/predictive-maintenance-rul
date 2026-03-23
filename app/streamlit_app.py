@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import pandas as pd
 import streamlit as st
 
-from src.data.loader import load_cmapss_raw, COLUMNS
+from src.data.loader import COLUMNS
 from src.inference.pipeline import RULPipeline
 from app.tabs import operations, analytics
 
@@ -41,8 +41,11 @@ with st.sidebar:
 # ── Data loading ─────────────────────────────────────────────────────────────
 @st.cache_data
 def load_demo():
-    _, test_raw, _ = load_cmapss_raw(data_dir="data/raw")
-    return test_raw
+    demo_path = Path(__file__).parent.parent / "data" / "demo" / "test_FD001.txt"
+    df = pd.read_csv(demo_path, sep=r"\s+", header=None, engine="python")
+    df = df.iloc[:, : len(COLUMNS)]
+    df.columns = COLUMNS
+    return df
 
 
 if uploaded is not None:

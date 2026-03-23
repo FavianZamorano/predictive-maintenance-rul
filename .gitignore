@@ -1,4 +1,5 @@
-/data/
+/data/raw/
+/data/processed/
 /models/
 __pycache__/
 *.pyc
@@ -7,3 +8,4 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 .worktrees/
+.venv/
