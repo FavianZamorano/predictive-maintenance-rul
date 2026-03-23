@@ -23,9 +23,7 @@ Unplanned turbofan engine failures cost the aviation and industrial sector an es
 
 ## Live Demo
 
-**[🚀 Open Dashboard →](https://your-app.streamlit.app)**
-
-<!-- Replace URL above with your Streamlit Cloud URL after deploy -->
+**[🚀 Open Dashboard →](https://predictive-maintenance-rul-sarsrm36mxc5zmbmnn6hky.streamlit.app/)**
 <!-- Add animated GIF of dashboard here -->
 
 ---
