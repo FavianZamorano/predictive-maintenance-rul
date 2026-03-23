@@ -1,0 +1,13 @@
+/* Industrial dark theme */
+.stApp {
+    background-color: #0e1117;
+}
+.metric-card {
+    background: #1e2530;
+    border-radius: 8px;
+    padding: 1rem;
+    border-left: 4px solid #00d4aa;
+}
+.status-critical { color: #ff4b4b; font-weight: bold; }
+.status-warning  { color: #ffa500; font-weight: bold; }
+.status-normal   { color: #00d4aa; font-weight: bold; }
