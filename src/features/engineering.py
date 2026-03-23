@@ -1,6 +1,5 @@
 """Feature engineering for CMAPSS dataset."""
 import joblib
-import numpy as np
 import pandas as pd
 from pathlib import Path
 from sklearn.preprocessing import MinMaxScaler
