@@ -68,7 +68,7 @@ else:
 def run_inference(model_type: str, _df: pd.DataFrame):
     try:
         pipeline = RULPipeline(model_dir="models", model_type=model_type)
-        return pipeline.predict(_df)
+        return pipeline.predict(_df, n_mc=10)
     except FileNotFoundError as e:
         return None, str(e)
 
