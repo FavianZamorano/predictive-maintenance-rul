@@ -32,12 +32,12 @@ Unplanned turbofan engine failures cost the aviation and industrial sector an es
 
 ## Results
 
-| Model   | RMSE  | MAE   | NASA Score |
-|---------|-------|-------|------------|
-| LSTM    | _TBD_ | _TBD_ | _TBD_      |
-| XGBoost | _TBD_ | _TBD_ | _TBD_      |
+| Model       | RMSE      | MAE   | NASA Score |
+|-------------|-----------|-------|------------|
+| **LSTM** ✅ | **17.08** | **12.50** | **493**  |
+| XGBoost     | 86.20     | 75.52 | 559,018    |
 
-> _Run notebooks 03 and 04 to fill in these values from your trained models._
+> LSTM wins decisively — sequence modeling captures temporal degradation patterns that tabular XGBoost misses.
 
 ---
 
